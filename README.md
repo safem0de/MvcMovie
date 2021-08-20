@@ -46,7 +46,7 @@ public IActionResult Index()
 {
     return View();
 }
-<hr>
+--------------------------------------------------------------------------------------
 2) Add View
   2.1 สร้างโฟล์เดอร์ HelloWorld ใน Views (Views/HelloWorld)
   2.2 ในโฟล์เดอร์ HelloWorld สร้างไฟล์ Index.cshtml
