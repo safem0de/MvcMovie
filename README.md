@@ -41,12 +41,12 @@ https://localhost:5001/HelloWorld/Welcome/3?name=Rick (Result)
 
 PART III Add View to an ASP.NET
 1) ที่ HelloWorld Controller ลบอันเก่าใส่อันนี้
-========================================================
+--------------------------------------------------------------------------------------
 public IActionResult Index()
 {
     return View();
 }
-========================================================
+<hr>
 2) Add View
   2.1 สร้างโฟล์เดอร์ HelloWorld ใน Views (Views/HelloWorld)
   2.2 ในโฟล์เดอร์ HelloWorld สร้างไฟล์ Index.cshtml
