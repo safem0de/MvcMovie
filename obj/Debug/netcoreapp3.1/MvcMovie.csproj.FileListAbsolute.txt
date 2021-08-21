@@ -209,3 +209,4 @@ D:\C_SharpProject\MvcMovie\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.
 D:\C_SharpProject\MvcMovie\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 D:\C_SharpProject\MvcMovie\obj\Debug\netcoreapp3.1\Razor\Views\Movies\Details.cshtml.g.cs
 D:\C_SharpProject\MvcMovie\obj\Debug\netcoreapp3.1\Razor\Views\Movies\Index.cshtml.g.cs
+D:\C_SharpProject\MvcMovie\obj\Debug\netcoreapp3.1\Razor\Views\Movies\Edit.cshtml.g.cs
