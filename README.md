@@ -50,8 +50,9 @@ public IActionResult Index()
 --------------------------------------------------------------------------------------
 2) Add View
 
-  2.1) สร้างโฟล์เดอร์ HelloWorld ใน Views (Views/HelloWorld)
-  2.2) ในโฟล์เดอร์ HelloWorld สร้างไฟล์ Index.cshtml
+2.1) สร้างโฟล์เดอร์ HelloWorld ใน Views (Views/HelloWorld)
+2.2) ในโฟล์เดอร์ HelloWorld สร้างไฟล์ Index.cshtml
+
 3) Copy โค้ดจากใน Website ไปใส่ใน Index.cshtml
 4) ไปแก้ Template ที่ View/Shared/_Layout.cshtml ตามที่เว็บมันบอก
 5) 
