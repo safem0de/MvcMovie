@@ -5,6 +5,8 @@ using Microsoft.EntityFrameworkCore;
 using MvcMovie.Data;
 using MvcMovie.Models;
 
+using System.Linq;
+
 namespace MvcMovie.Controllers
 {
     public class MoviesController : Controller
@@ -17,9 +19,28 @@ namespace MvcMovie.Controllers
         }
 
         // GET: Movies
-        public async Task<IActionResult> Index()
+        // public async Task<IActionResult> Index()
+        // {
+        //     return View(await _context.Movie.ToListAsync());
+        // }
+
+        public async Task<IActionResult> Index(string searchString)
         {
-            return View(await _context.Movie.ToListAsync());
+            var movies = from m in _context.Movie
+                        select m;
+
+            if (!String.IsNullOrEmpty(searchString))
+            {
+                movies = movies.Where(s => s.Title.Contains(searchString));
+            }
+
+            return View(await movies.ToListAsync());
+        }
+
+        [HttpPost]
+        public string Index(string searchString, bool notUsed)
+        {
+            return "From [HttpPost]Index: filter on " + searchString;
         }
 
         public async Task<IActionResult> Details(int? id)
@@ -89,8 +110,6 @@ namespace MvcMovie.Controllers
             }
             return View(movie);
         }
-
-        
 
         private bool MovieExists(object iD)
         {
